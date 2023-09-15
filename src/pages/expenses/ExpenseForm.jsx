@@ -168,16 +168,16 @@ function ExpenseForm({handleCloseExpenseForm,setShowForm,showForm}) {
                 <div className="grid grid-cols-2 sm:my-3 items-center my-1 gap-2">
                     <div>
                         <p className=" my-2 text-gray-400 text-sm sm:font-semibold sm:text-base">Expenses</p>
-                        <input required onChange={handleInputs} type="text" name="itemName" className={` outline-none border-2 ${isRequired && inputsEntered.itemName.length<=0?"border-red-500":"border-black"} sm:w-60 sm:py-1 sm:px-2  rounded-lg px-1 py-1 w-32 `}  placeholder="Expense name"/>
+                        <input  onChange={handleInputs} type="text" name="itemName" className={` outline-none border-2 ${isRequired && inputsEntered.itemName.length<=0?"border-red-500":"border-black"} sm:w-60 sm:py-1 sm:px-2  rounded-lg px-1 py-1 w-32 `}  placeholder="Expense name"/>
                     </div>
                     <div>
                         <p className=" my-2 text-gray-400 text-sm sm:font-semibold sm:text-base">Date of Expense</p>
-                        <input required onChange={handleInputs} name="date" className={`outline-none ${isRequired && inputsEntered.date.length<=0?"border-red-500":"border-black"} sm:py-1 sm:px-2 sm:w-60  border-2 rounded-md w-32 px-1 py-1`} type="date"/>
+                        <input  onChange={handleInputs} name="date" className={`outline-none ${isRequired && inputsEntered.date.length<=0?"border-red-500":"border-black"} sm:py-1 sm:px-2 sm:w-60  border-2 rounded-md w-32 px-1 py-1`} type="date"/>
                     </div>
                 </div>
 
                 <p className="sm:mt-4  my-2 text-gray-400 text-sm sm:font-semibold sm:text-base">Description</p>
-                <textarea required onChange={handleInputs}  name="description" cols="30" className={` py-1 bg-slate-200 sm:w-[40%] sm:h-28 outline-none border-2 border-black rounded-lg ${isRequired && inputsEntered.description.length<=0?"border-red-500":"border-black"}`} rows="2"></textarea>
+                <textarea  onChange={handleInputs}  name="description" cols="30" className={` py-1 bg-slate-200 sm:w-[40%] sm:h-28 outline-none border-2 border-black rounded-lg ${isRequired && inputsEntered.description.length<=0?"border-red-500":"border-black"}`} rows="2"></textarea>
             </div>
             <div className="grid grid-cols-3 items-center font-semibold text-lg sm:text-xl ">
                 {arrayOfNumbers.map(function(eachNumber,index){
